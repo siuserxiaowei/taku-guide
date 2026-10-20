@@ -47,10 +47,12 @@ def main():
         nonlocal first
         src, alt = m.group(1), m.group(2)
         name = Path(src).stem
+        head = (ROOT / src).read_bytes()[16:24]
+        w, h = int.from_bytes(head[:4], "big"), int.from_bytes(head[4:], "big")
         load = 'loading="eager" fetchpriority="high"' if first else 'loading="lazy"'
         first = False
         return (f'<picture><source srcset="screenshots/web/{name}.webp" type="image/webp">'
-                f'<img src="{src}" alt="{alt}" width="2400" height="1600" {load} decoding="async"></picture>')
+                f'<img src="{src}" alt="{alt}" width="{w}" height="{h}" {load} decoding="async"></picture>')
 
     body = re.sub(r'<img src="(screenshots/[^"]+\.png)" alt="([^"]*)"[^>]*>', img, body)
 

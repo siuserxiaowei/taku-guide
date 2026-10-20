@@ -2,7 +2,7 @@
 
 **[在线阅读图文手册](https://siuserxiaowei.github.io/taku-guide/)** · [查看 Markdown](Taku新手图文手册.md)
 
-根据 Taku 官网、官方 X、Publisher / Sites 文档与 macOS 客户端实机整理的中文参考手册，包含 **22 个章节（第 0—21 节）、21 张实机截图**。这是第三方使用参考，非 Taku 官方文档。
+根据 Taku 官网、官方 X、Publisher / Sites 文档与 macOS 客户端实机整理的中文参考手册，包含 **22 个章节（第 0—21 节）、27 张实机截图**。这是第三方使用参考，非 Taku 官方文档。
 
 - 核对日期：2026-10-19
 - 实机版本：Taku 3.1.123（macOS，中文界面）
@@ -20,7 +20,7 @@
 
 - `index.html`：带目录、可放大截图、可复制提示词与打印样式的网页版。
 - `Taku新手图文手册.md`：Markdown 原稿。
-- `screenshots/`：21 张实机截图原图（PNG，2400×1600，Markdown 和网页放大图使用）。
+- `screenshots/`：27 张实机截图原图（PNG，2400×1600，Markdown 和网页放大图使用）。
 - `screenshots/web/`：网页正文用的 WebP 压缩版（1600 宽，约 1.1 MB，原图约 6.2 MB）。
 - `og-cover.jpg`：分享到微信、X 等平台时的封面图。
 - `sitemap.xml`：给搜索引擎提交的站点地图。
