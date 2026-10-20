@@ -19,7 +19,10 @@
 
 - `index.html`：带目录、可放大截图、可复制提示词与打印样式的网页版。
 - `Taku新手图文手册.md`：Markdown 原稿。
-- `screenshots/`：手册所用的 21 张实机截图。
+- `screenshots/`：21 张实机截图原图（PNG，2400×1600，Markdown 和网页放大图使用）。
+- `screenshots/web/`：网页正文用的 WebP 压缩版（1600 宽，约 1.1 MB，原图约 6.2 MB）。
+- `og-cover.jpg`：分享到微信、X 等平台时的封面图。
+- `sitemap.xml`：给搜索引擎提交的站点地图。
 - `.nojekyll`：按静态文件发布到 GitHub Pages。
 
 ## 本地预览
