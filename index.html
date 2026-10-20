@@ -110,7 +110,7 @@ main{min-width:0;background:var(--paper);border:1px solid var(--line);border-rad
 <li>希望靠发布作品获得稳定收入的人。当前市场还很早期，见第 18 节。</li>
 </ul>
 <h3 id="section-0-5-别搜错-同名产品">0.5 别搜错：同名产品</h3>
-<p>搜索 “Taku” 会混进别的产品。<strong>taku.cool 是一个网站弹窗和营销工具</strong>，AppSumo 上的大量 Taku 评价说的是它；GitHub 上的 LIJUMN/taku 是一个手机自动化的个人项目。本手册说的是 <strong>taku.ai</strong>、官方 X 账号 <strong>@TheTakuAI</strong> 和 GitHub 组织 <strong>Taku-OS</strong>。</p>
+<p>搜索 “Taku” 会混进别的产品。<strong>taku.cool 是一个网站弹窗和营销工具</strong>，AppSumo 上的大量 Taku 评价说的是它；GitHub 上的 LIJUMN/taku 是一个手机自动化的个人项目；应用商店里的 Takuku 是一款陪伴聊天应用。本手册说的是 <strong>taku.ai</strong>、官方 X 账号 <strong>@TheTakuAI</strong> 和 GitHub 组织 <strong>Taku-OS</strong>。</p>
 <h3 id="section-0-6-产品阶段">0.6 产品阶段</h3>
 <p>Taku 于 2026 年 8 月 18 日在 Product Hunt 上线，当天排名第 2。创始人在 Product Hunt 上的自我介绍提到，团队成员来自多家前沿 AI 实验室；这是本人陈述，本手册没有独立核实。</p>
 <p>对新手来说，更重要的是：<strong>它更新很快。</strong> 2026 年 9—10 月，官方更新记录里就有 16 个版本（见第 19 节）。看到界面和截图不一样时，先核对版本号。</p>
@@ -292,7 +292,7 @@ main{min-width:0;background:var(--paper);border:1px solid var(--line);border-rad
 <p>3.1.113 起有了 <strong>快速启动器</strong>。默认快捷键是 <strong>Command + Option + T</strong>，可以在 <strong>设置 → 常规 → 快速启动器</strong> 里改。在任何界面按下快捷键，就能搜索、启动 App，或直接提问；回答到一半可以停止，也可以转回主对话继续。习惯后，这是最快的入口。<a href="https://taku.ai/changelog">官方版本说明</a></p>
 <h3 id="section-Planner-Builder-Nitro-怎么理解">Planner、Builder、Nitro 怎么理解</h3>
 <p>Planner 可以理解为任务的规划与协调阶段；Builder 负责实现和构建。Nitro 是官方用于长任务的工作模式名称。它们并不是三种固定模型，也不能当成成功率或无限额度承诺。<a href="https://taku.ai/changelog">官方版本说明</a></p>
-<p>普通使用先选清楚目标和材料。执行强度、模型和复杂项目调试放到第 9 节；任务没有完成时，去任务管理看原因，不要只盯着最后一句回复。</p>
+<p>普通使用先选清楚目标和材料。档位决定用哪些模型、花多少 credits，见第 9.2 节；任务没有完成时，去任务管理看原因，不要只盯着最后一句回复。</p>
 <h2 id="chapter-4">4. 输入框里的 @：给 AI 指定资源</h2>
 <p>点击输入框旁的 <strong>@ 图标</strong>，会看到全部、新建、应用、技能、API、集成、文件等分类。它的价值是明确告诉 Agent 这次使用哪个资源。</p>
 <h3 id="section-4-1-新建-App-还是-Site">4.1 新建：App 还是 Site</h3>
@@ -370,7 +370,7 @@ main{min-width:0;background:var(--paper);border:1px solid var(--line);border-rad
 <p>先做一个不联网、不调用 AI、不接外部账号的小工具。功能越简单，越容易看出问题出在哪里。<strong>下面的过程和结果都是真机实测</strong>，包括中途出错和怎么恢复。</p>
 <p><strong>开始前先做两件事：</strong></p>
 <ol>
-<li><strong>调低档位。</strong> 打开 <strong>设置 → 开发者设置 → AI 工作引擎</strong>，看当前是 L1、L2 还是 L3。实测 Pro 账号默认是 L3 最高档，用它做这个小工具花了 2,299 credits。这种不调用 AI 的小工具，用 L1 或 L2 就够了，见第 9.2 节。</li>
+<li><strong>调低档位。</strong> 打开 <strong>设置 → 开发者设置 → AI 工作引擎</strong>，看当前是 L1、L2 还是 L3。实测 Pro 账号默认是 L3 最高档，用它做这个小工具花了 2,299 credits。这种不调用 AI 的小工具，建议先用 L1 或 L2 试，做不成再调高，见第 9.2 节。</li>
 <li><strong>点“新建对话”。</strong> 如果刚走完新手引导，一定要先新建对话，否则会显示“任务失败”。</li>
 </ol>
 <p><strong>操作步骤：</strong></p>
@@ -446,6 +446,22 @@ Taku 入门
 可以一键复制结果。完成后用我给的示例记录测试一次。
 </code></pre></div>
 <p>验收：用一段故意漏掉 “问题” 的记录测试，对应部分应该显示 “无”，而不是编出内容。</p>
+<h3 id="section-6-2-让做好的东西能反复用-能给别人用">6.2 让做好的东西能反复用、能给别人用</h3>
+<p>一次做成不难，难的是下次还能用、别人拿去也能用。官方博客 <a href="https://taku.ai/blog/reusable-ai-workflows">把一次性任务变成工具</a> 给了 6 条检查项，做 App、Skill 或自动化前都可以对照一遍：</p>
+<ol>
+<li><strong>把每次会变的内容当成输入。</strong> 比如日期范围、文件、读者对象。说不清每次要换哪些内容，就还不适合做成工具。</li>
+<li><strong>写清输出格式。</strong> 几条、几句、表格有哪几列，而不是一句“帮我总结一下”。</li>
+<li><strong>附一个真实例子。</strong> 给一组真实输入和你满意的结果，比写一堆形容词有用。第 6 节的验收输入就是这个作用。</li>
+<li><strong>加一条自检。</strong> 告诉它结果必须满足什么条件，比如“每条都要带来源链接”。</li>
+<li><strong>记下版本和日期。</strong> 以后效果变差，才分得清是你改了需求，还是模型变了。</li>
+<li><strong>写明依赖。</strong> 用了哪个模型、要什么文件、连了哪些账号。只写需要哪种密钥，不要把密钥本身写进去。</li>
+</ol>
+<p>博客里还有一个简单的检验办法：把工具交给一个同事，什么都不解释。他要问你问题才能用，就说明这些答案应该写进工具里。</p>
+<p>另外两个常见问题：</p>
+<ul>
+<li><strong>在原对话里好用，换个新对话就不行。</strong> 说明有些背景只在前面的聊天里说过。把这些背景写进需求，再到新对话里试一次。</li>
+<li><strong>模型更新后效果变了。</strong> 记下当时用的档位和模型，变了以后用同一个例子重新测一遍。</li>
+</ul>
 <h2 id="chapter-7">7. 任务管理：知道工作卡在哪里</h2>
 <p>点击右侧 <strong>任务管理</strong>，再点 <strong>View</strong>，可以切换全部、最近、产物、自动化。Workspace 则帮助你在工作空间之间组织任务；桌面还提供新建、重命名和归档入口。</p>
 <figure>
@@ -564,7 +580,7 @@ Taku 入门
 <p>一个任务通常分成好几步，每一步单独计费。实测 <strong>Pro 账号默认是 L3</strong>，强度 xhigh，最多 6 个 Agent 同时工作；用它做第 6 节的选题整理器花了 2,299 credits。</p>
 <p>怎么选：</p>
 <ul>
-<li><strong>不调用 AI 的小工具、改文字和颜色</strong>：L1 就够。</li>
+<li><strong>不调用 AI 的小工具、改文字和颜色</strong>：先试 L1。</li>
 <li><strong>日常大部分任务</strong>：L2。</li>
 <li><strong>复杂的多步骤项目，或者 L2 反复失败</strong>：再切到 L3。</li>
 </ul>
@@ -884,7 +900,7 @@ npx --yes --package https://github.com/Taku-OS/taku-publisher/releases/download/
 <tbody>
 <tr>
 <td>我还没懂 Taku 的价值</td>
-<td>按第 2 节，打开一个现成 App 并验证一个交互</td>
+<td>按第 2 节走完新手引导，再自己打开一个现成 App 试一次</td>
 </tr>
 <tr>
 <td>我想让 AI 做一次研究 / 整理</td>
@@ -928,9 +944,9 @@ npx --yes --package https://github.com/Taku-OS/taku-publisher/releases/download/
 <ol>
 <li>确认电脑是 Apple Silicon 芯片的 Mac，下载并登录（第 0、2 节）。</li>
 <li>到 <strong>设置 → 常规</strong> 看版本号，并按需切换中文。</li>
-<li>从社区装一个免费 App，打开它，完成一次有结果的操作（第 2 节）。</li>
+<li>走完内置的 12 步新手引导，装两个免费 App，再组合出一个新 App（第 2.2 节）。</li>
 <li>点输入框旁的 @，看一遍各个分类（第 4 节）。</li>
-<li>照抄第 6 节的 “选题整理器” 提示词，做出第一个 App。</li>
+<li>到 <strong>设置 → 开发者设置 → AI 工作引擎</strong> 把档位调到 L1 或 L2（第 9.2 节），点“新建对话”，再照抄第 6 节的 “选题整理器” 提示词，做出第一个 App。</li>
 <li>打开 <strong>任务管理</strong>，找到刚才的任务和产物（第 7 节）。</li>
 <li>到 <strong>设置 → 使用情况</strong> 看这半小时用了多少 credits（第 16 节）。</li>
 <li>想好要不要关闭训练数据的使用（第 17 节）。</li>
