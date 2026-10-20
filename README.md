@@ -2,18 +2,19 @@
 
 **[在线阅读图文手册](https://siuserxiaowei.github.io/taku-guide/)** · [查看 Markdown](Taku新手图文手册.md)
 
-根据 Taku 官网、官方 X、Publisher / Sites 文档与 macOS 客户端实机整理的中文参考手册，包含 **16 个章节、21 张实机截图**。这是第三方使用参考，非 Taku 官方文档。
+根据 Taku 官网、官方 X、Publisher / Sites 文档与 macOS 客户端实机整理的中文参考手册，包含 **22 个章节（第 0—21 节）、21 张实机截图**。这是第三方使用参考，非 Taku 官方文档。
 
-- 核对日期：2026-10-20
+- 核对日期：2026-10-19
 - 实机版本：Taku 3.1.123（macOS，中文界面）
-- 内容：现成 App、`@` 资源、Skill / API、创建与修改 App、任务管理、自动化、模型、集成、通知、Helper、Publisher、Sites 与常见排错。
-- 已验证、官方流程和尚未端到端验证的部分，见手册第 16 节。
+- 内容：Taku 是什么与电脑要求、套餐与 credits、隐私与作品许可、创作者收益预期、版本速览、常见问题；以及现成 App、`@` 资源、Skill / API、创建与修改 App、任务管理、自动化、模型、集成、通知、Helper、Publisher、Sites 与常见排错。
+- 已验证、官方流程和尚未端到端验证的部分，见手册第 21 节。
 
 ## 推荐阅读顺序
 
-1. 第 2 节：打开现成 App，验证一次交互。
-2. 第 4、6 节：理解 `@` 菜单，创建自己的简单工具。
-3. 第 11—13 节：带入 Codex / Claude 项目，以及新词雷达的迁移路线。
+1. 第 0 节：Taku 是什么、你的电脑能不能装；第 16 节：要花多少钱。
+2. 第 2 节：打开现成 App，验证一次交互。
+3. 第 4、6 节：理解 `@` 菜单，创建自己的简单工具。
+4. 第 11—13 节：带入 Codex / Claude 项目，以及新词雷达的迁移路线。
 
 ## 文件
 
@@ -24,6 +25,17 @@
 - `og-cover.jpg`：分享到微信、X 等平台时的封面图。
 - `sitemap.xml`：给搜索引擎提交的站点地图。
 - `.nojekyll`：按静态文件发布到 GitHub Pages。
+
+## 修改内容
+
+只改 `Taku新手图文手册.md`，然后生成网页：
+
+```bash
+pip install markdown
+python3 tools/build.py
+```
+
+`tools/template.html` 是网页外壳（样式、目录、脚本），`build.py` 会把 Markdown 填进去，并自动生成目录和 WebP 图片引用。
 
 ## 本地预览
 
